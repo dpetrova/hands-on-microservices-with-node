@@ -1,0 +1,50 @@
+{
+  "name": "seneca-jsonfile-store",
+  "version": "1.0.1",
+  "description": "Seneca data store plugin that uses plain JSON files",
+  "main": "jsonfile-store.js",
+  "license": "MIT",
+  "author": "Richard Rodger (http://richardrodger.com/)",
+  "contributors": [
+    "Peter Elger (http://peterelger.com)",
+    "Matteo Collina (http://www.matteocollina.com)",
+    "Michele Capra (https://twitter.com/piccoloaiutante)",
+    "Dean McDonnell (http://mcdonnelldean.me)"
+  ],
+  "pre-commit": [
+    "test"
+  ],
+  "scripts": {
+    "test": "lab test -r console -v -L -t 40",
+    "coveralls": "lab -s -P test -r lcov | coveralls",
+    "coverage": "lab -v -P test -L -t 40 -r html > docs/coverage.html",
+    "prettier": "prettier --write --no-semi --single-quote *.js lib/*.js test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senecajs/seneca-jsonfile-store"
+  },
+  "keywords": [
+    "seneca",
+    "plugin",
+    "store",
+    "json",
+    "file"
+  ],
+  "files": [
+    "LICENSE",
+    "README.md",
+    "jsonfile-store.js"
+  ],
+  "dependencies": {
+    "eraro": "0.4.1",
+    "lodash": "4.17.4"
+  },
+  "devDependencies": {
+    "lab": "13.1.x",
+    "pre-commit": "1.2.x",
+    "seneca": "plugin",
+    "seneca-entity": "2.0.x",
+    "seneca-store-test": "0.3.x"
+  }
+}

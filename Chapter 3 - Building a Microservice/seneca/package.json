@@ -1,0 +1,16 @@
+{
+  "name": "building-microservices-seneca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "seneca.js",
+  "scripts": {
+    "start": "node seneca.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dpetrova",
+  "license": "ISC",
+  "dependencies": {
+    "seneca": "^3.23.2",
+    "sharp": "^0.27.2"
+  }
+}

@@ -1,0 +1,4 @@
+{		
+	"db": "mysql://root:root@host.docker.internal/imagini",
+	"connectTimeout": 100000
+}
